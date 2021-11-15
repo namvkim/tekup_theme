@@ -178,3 +178,23 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function load_css()
+{
+  wp_register_style('style', get_template_directory_uri() . '/css/style.css', array(), false, 'all');
+  wp_enqueue_style('style');
+}
+add_action('wp_enqueue_scripts', 'load_css');
+
+//Load JavaScript
+function load_js()
+{
+  wp_register_script('detail_project', get_template_directory_uri() . '/js/detail.js', 'jquery', false, true);
+  wp_enqueue_script('detail_project');
+
+  wp_register_script('script', get_template_directory_uri() . '/js/script.js', 'jquery', false, true);
+  wp_enqueue_script('script');
+}
+
+add_action('wp_enqueue_scripts', 'load_js');
+
+
