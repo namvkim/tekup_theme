@@ -1,4 +1,4 @@
- <section class="menu__container w-100 position-fixed" id="menu__container">
+ <!-- <section class="menu__container w-100 position-fixed" id="menu__container">
    <div class="d-flex justify-content-between align-items-center">
      <div class="d-flex align-items-center">
        <div>
@@ -93,10 +93,10 @@
      </div>
      <div class="menu__overlay"></div>
    </div>
- </section>
+ </section> -->
  <section class="contact__container px-3">
    <div class="contact__content">
-     <img src="./images/contact.png" alt="contact" class="contact__image" />
+     <img src="<?php echo get_template_directory_uri() ?>/images/contact.png" alt="contact" class="contact__image" />
      <form class="contact__form">
        <div class="contact__top">Chúng tôi luôn ở đây để giúp bạn</div>
        <div class="contact__mid">Liên hệ với chúng tôi</div>
@@ -106,16 +106,16 @@
        </div>
        <div class="d-flex justify-content-between">
          <div class="contact__input__group me-3 w-50">
-           <img src="./images/contact_icon_user.svg" />
+           <img src="<?php echo get_template_directory_uri() ?>/images/contact_icon_user.svg" />
            <input class="contact__input__style" type="text" placeholder="Tên cá nhân" name="user" />
          </div>
          <div class="contact__input__group ms-3 w-50">
-           <img src="./images/phone.jpg" />
+           <img src="<?php echo get_template_directory_uri() ?>/images/phone.jpg" />
            <input class="contact__input__style" type="phone" placeholder="Số điện thoại" name="phone" />
          </div>
        </div>
        <div class="contact__input__group w-100">
-         <img src="./images/type.jpg" />
+         <img src="<?php echo get_template_directory_uri() ?>/images/type.jpg" />
          <select class="contact__input__style">
            <option>Lĩnh vực quan tâm</option>
            <option>Trí tuệ nhân tạo & Tầm nhìn máy tính</option>
@@ -124,7 +124,7 @@
          </select>
        </div>
        <div class="contact__input__group w-100">
-         <img src="./images/note.jpg" />
+         <img src="<?php echo get_template_directory_uri() ?>/images/note.jpg" />
          <input class="contact__input__style" type="text" placeholder="Lời nhắn" name="note" />
        </div>
        <button class="contact__btn__warning" type="submit">
@@ -133,7 +133,7 @@
      </form>
    </div>
  </section>
- <section class="footer__container d-flex justify-content-center px-3">
+ <!-- <section class="footer__container d-flex justify-content-center px-3">
    <div class="footer__content">
      <div class="footer__main row m-0">
        <div class="footer__main__contact col-lg-5 p-0">
@@ -183,4 +183,4 @@
        </div>
      </div>
    </div>
- </section>
+ </section> -->

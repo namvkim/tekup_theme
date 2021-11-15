@@ -1,4 +1,4 @@
-    <section class="menu__container w-100 position-fixed" id="menu__container">
+    <!-- <section class="menu__container w-100 position-fixed" id="menu__container">
       <div class="d-flex justify-content-between align-items-center">
         <div class="d-flex align-items-center">
           <div>
@@ -93,7 +93,7 @@
         </div>
         <div class="menu__overlay"></div>
       </div>
-    </section>
+    </section> -->
     <section class="
         about__title__container
         d-flex
@@ -287,7 +287,7 @@
         </div>
       </div>
     </section>
-    <section class="footer__container d-flex justify-content-center px-3">
+    <!-- <section class="footer__container d-flex justify-content-center px-3">
       <div class="footer__content">
         <div class="footer__main row m-0">
           <div class="footer__main__contact col-lg-5 p-0">
@@ -337,4 +337,4 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
