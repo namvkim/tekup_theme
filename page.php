@@ -18,22 +18,21 @@ get_header('secondary');
 	<main>
 
 		<?php
-			get_template_part( 'template-parts/contact/contact', 'page' ); 
-		// while ( have_posts() ) :
-		// 	the_post();
+		while ( have_posts() ) :
+			the_post();
 
-		// 	get_template_part( 'template-parts/content', 'page' );
+			get_template_part( 'template-parts/content', 'page' );
 
 			
-		// 	if ( comments_open() || get_comments_number() ) :
-		// 		comments_template();
-		// 	endif;
+			if ( comments_open() || get_comments_number() ) :
+				comments_template();
+			endif;
 
-		// endwhile; 
+		endwhile; 
 		?>
 
 	</main><!-- #main -->
 
 <?php
-// get_sidebar();
+get_sidebar();
 get_footer();

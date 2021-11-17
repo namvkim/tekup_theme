@@ -12,7 +12,7 @@
  * @package theme-tekup
  */
 
-get_header();
+get_header('');
 ?>
 	<main>
 	<?php

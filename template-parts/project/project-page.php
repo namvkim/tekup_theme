@@ -1,4 +1,4 @@
-<section class="menu__container w-100 position-fixed" id="menu__container">
+<!-- <section class="menu__container w-100 position-fixed" id="menu__container">
   <div class="d-flex justify-content-between align-items-center">
     <div class="d-flex align-items-center">
       <div>
@@ -93,9 +93,9 @@
     </div>
     <div class="menu__overlay"></div>
   </div>
-</section>
+</section> -->
 <section class="d-flex justify-content-center px-3">
-  <img src="images/background_dot3d.gif" alt="" class="project__background" />
+  <img src="<?php echo get_template_directory_uri() ?>/images/background_dot3d.gif" alt="" class="project__background" />
   <div class="project__content">
     <div class="
             project__header
@@ -109,7 +109,7 @@
       <div class="project__body__item">
         <div class="project__body__item__img">
           <a href="project_details.html">
-            <img src="./images/project_item1.png" alt="" />
+            <img src="<?php echo get_template_directory_uri() ?>/images/project_item1.png" alt="" />
           </a>
         </div>
         <div class="project__body__item__title">Boxgo Fulfilment</div>
@@ -118,7 +118,7 @@
       <div class="project__body__item">
         <div class="project__body__item__img">
           <a href="project_details.html">
-            <img src="./images/project_item2.png" alt="" />
+            <img src="<?php echo get_template_directory_uri() ?>/images/project_item2.png" alt="" />
           </a>
         </div>
         <div class="project__body__item__title">AI Plan Chedule</div>
@@ -127,7 +127,7 @@
       <div class="project__body__item">
         <div class="project__body__item__img">
           <a href="project_details.html">
-            <img src="./images/project_item3.png" alt="" />
+            <img src="<?php echo get_template_directory_uri() ?>/images/project_item3.png" alt="" />
           </a>
         </div>
         <div class="project__body__item__title">Boxgo Fulfilment</div>
@@ -136,7 +136,7 @@
       <div class="project__body__item">
         <div class="project__body__item__img">
           <a href="project_details.html">
-            <img src="./images/project_item4.png" alt="" />
+            <img src="<?php echo get_template_directory_uri() ?>/images/project_item4.png" alt="" />
           </a>
         </div>
         <div class="project__body__item__title">Boxgo Fulfilment</div>
@@ -145,7 +145,7 @@
       <div class="project__body__item">
         <div class="project__body__item__img">
           <a href="project_details.html">
-            <img src="./images/project_item5.png" alt="" />
+            <img src="<?php echo get_template_directory_uri() ?>/images/project_item5.png" alt="" />
           </a>
         </div>
         <div class="project__body__item__title">Boxgo Fulfilment</div>
@@ -154,7 +154,7 @@
       <div class="project__body__item">
         <div class="project__body__item__img">
           <a href="project_details.html">
-            <img src="./images/project_item6.png" alt="" />
+            <img src="<?php echo get_template_directory_uri() ?>/images/project_item6.png" alt="" />
           </a>
         </div>
         <div class="project__body__item__title">Boxgo Fulfilment</div>
@@ -163,7 +163,7 @@
       <div class="project__body__item">
         <div class="project__body__item__img">
           <a href="project_details.html">
-            <img src="./images/project_item7.png" alt="" />
+            <img src="<?php echo get_template_directory_uri() ?>/images/project_item7.png" alt="" />
           </a>
         </div>
         <div class="project__body__item__title">Boxgo Fulfilment</div>
@@ -172,7 +172,7 @@
       <div class="project__body__item">
         <div class="project__body__item__img">
           <a href="project_details.html">
-            <img src="./images/project_item8.png" alt="" />
+            <img src="<?php echo get_template_directory_uri() ?>/images/project_item8.png" alt="" />
           </a>
         </div>
         <div class="project__body__item__title">Boxgo Fulfilment</div>
@@ -181,7 +181,7 @@
       <div class="project__body__item">
         <div class="project__body__item__img">
           <a href="project_details.html">
-            <img src="./images/project_item9.png" alt="" />
+            <img src="<?php echo get_template_directory_uri() ?>/images/project_item9.png" alt="" />
           </a>
         </div>
         <div class="project__body__item__title">Boxgo Fulfilment</div>
@@ -193,7 +193,7 @@
     </div>
   </div>
 </section>
-<section class="footer__container d-flex justify-content-center px-3">
+<!-- <section class="footer__container d-flex justify-content-center px-3">
   <div class="footer__content">
     <div class="footer__main row m-0">
       <div class="footer__main__contact col-lg-5 p-0">
@@ -243,4 +243,4 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->

@@ -20,10 +20,6 @@
   <meta name="description" content="<?php bloginfo('description'); ?>">
   <title>Tekup Solution</title>
   <link href="<?php echo get_template_directory_uri() ?>/style.css" rel="stylesheet">
-  <!-- <link rel="profile" href="https://gmpg.org/xfn/11"> -->
-
-  <!-- css -->
-  <!-- <link rel="stylesheet" href="./css/style.css" /> -->
 
   <!-- google font  -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,21 +33,21 @@
 
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <!--Carousel-->
-  <!-- <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css"
-    />
-    <link rel="stylesheet" href="css/animate.css" /> -->
+  
+  <!-- Photoswipe CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css">
+    
+  <!-- Carousel -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
   <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
   <header>
-    <section class="menu__container w-100 position-fixed" id="menu__container">
+  <section class="menu__container w-100 position-fixed" id="menu__container">
       <div class="d-flex justify-content-between align-items-center">
         <div class="d-flex align-items-center">
           <div>
@@ -82,7 +78,7 @@
           </label>
           <div class="menu__main__list text-center">
             <div class="p-2 p-lg-4">
-              <a href="hompage.html" class="position-relative text-decoration-none">
+              <a href="http://localhost:8080/foxteam/" class="position-relative text-decoration-none">
                 <span class="position-relative">Trang chủ</span>
                 <hr class="
                     m-0
@@ -94,7 +90,7 @@
               </a>
             </div>
             <div class="p-2 p-lg-4">
-              <a href="about.html" class="position-relative text-decoration-none">
+              <a href="http://localhost:8080/foxteam/about/" class="position-relative text-decoration-none">
                 <span class="position-relative">Về chúng tôi</span>
                 <hr class="
                     m-0
@@ -106,7 +102,7 @@
               </a>
             </div>
             <div class="p-2 p-lg-4">
-              <a href="project.html" class="position-relative text-decoration-none">
+              <a href="http://localhost:8080/foxteam/project/" class="position-relative text-decoration-none">
                 <span class="position-relative">Dự án</span>
                 <hr class="
                     m-0
@@ -118,7 +114,7 @@
               </a>
             </div>
             <div class="p-2 p-lg-4">
-              <a href="service.html" class="position-relative text-decoration-none">
+              <a href="http://localhost:8080/foxteam/services/" class="position-relative text-decoration-none">
                 <span class="position-relative">Dịch vụ</span>
                 <hr class="
                     m-0
@@ -130,7 +126,7 @@
               </a>
             </div>
             <div class="p-2 p-lg-4">
-              <a href="contact.html" class="position-relative text-decoration-none">
+              <a href="http://localhost:8080/foxteam/contact/" class="position-relative text-decoration-none">
                 <span class="position-relative">Liên hệ</span>
                 <hr class="
                     m-0

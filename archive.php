@@ -7,7 +7,7 @@
  * @package theme-tekup
  */
 
-get_header();
+get_header('secondary');
 ?>
 
 	<main id="primary" class="site-main">

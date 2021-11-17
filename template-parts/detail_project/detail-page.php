@@ -1,4 +1,4 @@
-  <section class="menu__container w-100 position-fixed" id="menu__container">
+  <!-- <section class="menu__container w-100 position-fixed" id="menu__container">
     <div class="d-flex justify-content-between align-items-center">
       <div class="d-flex align-items-center">
         <div>
@@ -93,7 +93,7 @@
       </div>
       <div class="menu__overlay"></div>
     </div>
-  </section>
+  </section> -->
   <section class="detailpage__section">
     <div class="container-fluid detailpage_container">
       <div class="row project__image">
@@ -101,22 +101,22 @@
           <div class="row my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
             <div class="col-lg-7 project__image__1">
               <figure class="figure" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="images/project_1.png" itemprop="contentUrl" data-size="1024x1024">
-                  <img src="images/project_1.png" itemprop="thumbnail" alt="Image project 1" class="figure-img img-fluid rounded" />
+                <a href="<?php echo get_template_directory_uri() ?>/images/project_1.png" itemprop="contentUrl" data-size="1024x1024">
+                  <img src="<?php echo get_template_directory_uri() ?>/images/project_1.png" itemprop="thumbnail" alt="Image project 1" class="figure-img img-fluid rounded" />
                 </a>
                 <figcaption itemprop="caption description">Project Image 1</figcaption>
               </figure>
             </div>
             <div class="col-lg-5 project__image__2">
               <figure class="w-100 shadow-1-strong rounded" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="images/project_2.png" itemprop="contentUrl" data-size="1024x1024">
-                  <img src="images/project_2.png" alt="Lightbox image 1" class="w-100 mb-2 mb-md-3 shadow-1-strong rounded" />
+                <a href="<?php echo get_template_directory_uri() ?>/images/project_2.png" itemprop="contentUrl" data-size="1024x1024">
+                  <img src="<?php echo get_template_directory_uri() ?>/images/project_2.png" alt="Lightbox image 1" class="w-100 mb-2 mb-md-3 shadow-1-strong rounded" />
                 </a>
                 <figcaption itemprop="caption description">Project Image 2</figcaption>
               </figure>
               <figure class="figure" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="images/project_3.png" itemprop="contentUrl" data-size="1024x1024">
-                  <img src="images/project_3.png" alt="Lightbox image 2" class="figure-img img-fluid rounded" />
+                <a href="<?php echo get_template_directory_uri() ?>/images/project_3.png" itemprop="contentUrl" data-size="1024x1024">
+                  <img src="<?php echo get_template_directory_uri() ?>/images/project_3.png" alt="Lightbox image 2" class="figure-img img-fluid rounded" />
                 </a>
                 <figcaption itemprop="caption description">Project Image 3</figcaption>
               </figure>
@@ -154,62 +154,63 @@
       </div>
     </div>
   </section>
+  
   <section class="other__project_section">
     <div class="container mt-5 other__project_content">
       <h2>Dự án khác</h2>
       <div class="owl-carousel my-gallery other_project_carousel">
         <div class="ms-2 me-2">
           <div class="item">
-            <img data-src="images/project_item1.png" class="owl-lazy">
+            <img data-src="<?php echo get_template_directory_uri()?>/images/project_item1.png" class="owl-lazy">
             <h5 class="card-title">Boxgo Fulfilment</h5>
             UI/UX Design
           </div>
         </div>
         <div class="ms-2 me-2">
           <div class="item">
-            <img data-src="images/project_item2.png" class="owl-lazy">
+            <img data-src="<?php echo get_template_directory_uri() ?>/images/project_item2.png" class="owl-lazy">
             <h5 class="card-title">AI Plan Chedule</h5>
             UI/UX Design
           </div>
         </div>
         <div class="ms-2 me-2">
           <div class="item">
-            <img data-src="images/project_item3.png" class="owl-lazy">
+            <img data-src="<?php echo get_template_directory_uri() ?>/images/project_item3.png" class="owl-lazy">
             <h5 class="card-title">AI Plan Chedule</h5>
             UI/UX Design
           </div>
         </div>
         <div class="ms-2 me-2">
           <div class="item">
-            <img data-src="images/project_item4.png" class="owl-lazy">
+            <img data-src="<?php echo get_template_directory_uri() ?>/images/project_item4.png" class="owl-lazy">
             <h5 class="card-title">AI Plan Chedule</h5>
             UI/UX Design
           </div>
         </div>
         <div class="ms-2 me-2">
           <div class="item">
-            <img data-src="images/project_item5.png" class="owl-lazy">
+            <img data-src="<?php echo get_template_directory_uri() ?>/images/project_item5.png" class="owl-lazy">
             <h5 class="card-title">AI Plan Chedule</h5>
             UI/UX Design
           </div>
         </div>
         <div class="ms-2 me-2">
           <div class="item">
-            <img data-src="images/project_item6.png" class="owl-lazy">
+            <img data-src="<?php echo get_template_directory_uri() ?>/images/project_item6.png" class="owl-lazy">
             <h5 class="card-title">AI Plan Chedule</h5>
             UI/UX Design
           </div>
         </div>
         <div class="ms-2 me-2">
           <div class="item">
-            <img data-src="images/project_item7.png" class="owl-lazy">
+            <img data-src="<?php echo get_template_directory_uri() ?>/images/project_item7.png" class="owl-lazy">
             <h5 class="card-title">AI Plan Chedule</h5>
             UI/UX Design
           </div>
         </div>
         <div class="ms-2 me-2">
           <div class="item">
-            <img data-src="images/project_item8.png" class="owl-lazy">
+            <img data-src="<?php echo get_template_directory_uri() ?>/images/project_item8.png" class="owl-lazy">
             <h5 class="card-title">AI Plan Chedule</h5>
             UI/UX Design
           </div>
@@ -269,7 +270,7 @@
     </div>
 
   </section>
-  <section class="footer__container d-flex justify-content-center px-3">
+  <!-- <section class="footer__container d-flex justify-content-center px-3">
     <div class="footer__content">
       <div class="footer__main row m-0">
         <div class="footer__main__contact col-lg-5 p-0">
@@ -319,4 +320,4 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->

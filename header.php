@@ -81,7 +81,7 @@
           </label>
           <div class="menu__main__list text-center">
             <div class="p-2 p-lg-4">
-              <a href="hompage.html" class="position-relative text-decoration-none">
+              <a href="http://localhost:8080/foxteam/" class="position-relative text-decoration-none">
                 <span class="position-relative">Trang chủ</span>
                 <hr class="
                     m-0
@@ -93,7 +93,7 @@
               </a>
             </div>
             <div class="p-2 p-lg-4">
-              <a href="about.html" class="position-relative text-decoration-none">
+              <a href="http://localhost:8080/foxteam/about/" class="position-relative text-decoration-none">
                 <span class="position-relative">Về chúng tôi</span>
                 <hr class="
                     m-0
@@ -105,7 +105,7 @@
               </a>
             </div>
             <div class="p-2 p-lg-4">
-              <a href="project.html" class="position-relative text-decoration-none">
+              <a href="http://localhost:8080/foxteam/project/" class="position-relative text-decoration-none">
                 <span class="position-relative">Dự án</span>
                 <hr class="
                     m-0
@@ -117,7 +117,7 @@
               </a>
             </div>
             <div class="p-2 p-lg-4">
-              <a href="service.html" class="position-relative text-decoration-none">
+              <a href="http://localhost:8080/foxteam/services/" class="position-relative text-decoration-none">
                 <span class="position-relative">Dịch vụ</span>
                 <hr class="
                     m-0
@@ -129,7 +129,7 @@
               </a>
             </div>
             <div class="p-2 p-lg-4">
-              <a href="contact.html" class="position-relative text-decoration-none">
+              <a href="http://localhost:8080/foxteam/contact/" class="position-relative text-decoration-none">
                 <span class="position-relative">Liên hệ</span>
                 <hr class="
                     m-0
