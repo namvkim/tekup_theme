@@ -116,3 +116,39 @@ if (document.getElementById('homepage') || document.getElementById('about')) {
   });
 
 }
+const constraints = {
+    user : {
+        presence: { allowEmpty: false }
+    },
+    email: {
+        presence: { allowEmpty: false },
+        email: true
+    },
+    note: {
+        presence: { allowEmpty: false }
+    }
+};
+
+const form = document.getElementById('contact-form');
+
+form.addEventListener('submit', function (event) {
+    const formValues = {
+        user: form.elements.name.value,
+        email: form.elements.email.value,
+        note: form.elements.message.value
+    };
+
+    const errors = validate(formValues, constraints);
+
+    if (errors) {
+        event.preventDefault();
+        const errorMessage = Object
+            .values(errors)
+            .map(function (fieldValues) {
+                return fieldValues.join(', ')
+            })
+            .join("\n");
+
+        alert(errorMessage);
+    }
+}, false);
