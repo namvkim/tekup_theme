@@ -262,88 +262,97 @@
           Chúng tôi coi trọng mối quan hệ làm việc lâu dài
         </div>
       </div>
-      <div class="tab-content" id="nav-tabContent">
-        <div
-          class="
-            tab-pane
-            fade
-            show
-            active
-            homepage___project__item
-            position-relative
-          "
-          id="homepage__project__1"
-        >
-          <img
-            src="https://wallpaperaccess.com/full/1157063.jpg"
-            alt=""
-            class="
-              homepage__project__background
-              position-absolute
-              top-0
-              start-0
-            "
-          />
-          <img
-            src="<?php echo get_template_directory_uri() ?>/images/homepage_stroke_9.png"
-            alt=""
-            class="homepage__reviews__stroke__9 position-absolute start-0"
-          />
-          <div class="homepage__project__item__content">
-            <img
-              src="<?php echo get_template_directory_uri() ?>/images/homepage_image_iphone.png"
-              alt=""
-              class="homepage__project__item__image"
-            />
-            <div class="homepage__project__item__box">
-              <div class="homepage__project__item__title mb-2">APP DESIGN</div>
-              <div class="homepage__project__item__title__main">Báo Đen</div>
-              <div class="homepage__project__item__description">
-                Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công
-                nghiệp in ấn từ những năm 1500, khi một họa sĩ vô danh ghép
-                nhiều đoạn văn
-              </div>
-              <a href="#">
-                <div
-                  class="
-                    homepage__project__item__btn
-                    d-flex
-                    justify-content-center
-                    align-items-center
-                  "
-                >
-                  <div class="homepage__project__item__btn__name">
-                    XEM CHI TIẾT
+      <div id="swiper-container">
+        <div id="gallery-top">
+          <div class="tab-content" id="nav-tabContent">
+            <div
+              class="
+                tab-pane
+                fade
+                show
+                active
+                homepage___project__item
+                position-relative
+              "
+              id="homepage__project__1"
+            >
+              <img
+                src="https://wallpaperaccess.com/full/1157063.jpg"
+                alt=""
+                class="
+                  homepage__project__background
+                  position-absolute
+                  top-0
+                  start-0
+                "
+              />
+              <img
+                src="<?php echo get_template_directory_uri() ?>/images/homepage_stroke_9.png"
+                alt=""
+                class="homepage__reviews__stroke__9 position-absolute start-0"
+              />
+              <div class="homepage__project__item__content">
+                <img
+                  src="./images/homepage_image_iphone.png"
+                  alt=""
+                  class="homepage__project__item__image"
+                />
+                <div class="homepage__project__item__box">
+                  <div class="homepage__project__item__title mb-2">
+                    APP DESIGN
                   </div>
-                  <img src="<?php echo get_template_directory_uri() ?>/images/homepage__icon__right__arrow.svg" alt="" />
+                  <div class="homepage__project__item__title__main">
+                    Báo Đen
+                  </div>
+                  <div class="homepage__project__item__description">
+                    Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành
+                    công nghiệp in ấn từ những năm 1500, khi một họa sĩ vô danh
+                    ghép nhiều đoạn văn
+                  </div>
+                  <a href="#">
+                    <div
+                      class="
+                        homepage__project__item__btn
+                        d-flex
+                        justify-content-center
+                        align-items-center
+                      "
+                    >
+                      <div class="homepage__project__item__btn__name">
+                        XEM CHI TIẾT
+                      </div>
+                      <img
+                        src="<?php echo get_template_directory_uri() ?>/images/homepage__icon__right__arrow.svg"
+                        alt=""
+                      />
+                    </div>
+                  </a>
                 </div>
-              </a>
+              </div>
+            </div>
+            <div
+              class="homepage___project__item tab-pane fade"
+              id="homepage__project__2"
+            >
+              ...b
+            </div>
+            <div
+              class="homepage___project__item tab-pane fade"
+              id="homepage__project__3"
+            >
+              ...c
+            </div>
+            <div
+              class="homepage___project__item tab-pane fade"
+              id="homepage__project__4"
+            >
+              ...d
             </div>
           </div>
         </div>
-        <div
-          class="homepage___project__item tab-pane fade"
-          id="homepage__project__2"
-        >
-          ...b
-        </div>
-        <div
-          class="homepage___project__item tab-pane fade"
-          id="homepage__project__3"
-        >
-          ...c
-        </div>
-        <div
-          class="homepage___project__item tab-pane fade"
-          id="homepage__project__4"
-        >
-          ...d
-        </div>
-      </div>
-      <div class="homepage___project__tablist__container">
-        <div class="homepage___project__tablst__content position-relative">
+        <div class="homepage___project__tablist__container">
           <div
-            class="nav homepage___project__tablist position-absolute"
+            class="nav homepage___project__tablist"
             id="nav-tab"
             role="tablist"
           >
