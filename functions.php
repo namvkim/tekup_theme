@@ -7,6 +7,8 @@
  * @package theme-tekup
  */
 
+use PHPMailer\PHPMailer\PHPMailer;
+
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
 	define( '_S_VERSION', '1.0.0' );
@@ -178,23 +180,23 @@ require get_template_directory() . '/inc/customizer.php';
 /**
  * Load Jetpack compatibility file.
  */
-if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
-}
+// if ( defined( 'JETPACK__VERSION' ) ) {
+// 	require get_template_directory() . '/inc/jetpack.php';
+// }
 
 function load_css()
 {
   wp_register_style('style', get_template_directory_uri() . '/css/style.css', array(), false, 'all');
   wp_enqueue_style('style');
 
-  wp_register_style('detail', get_template_directory_uri() . '/css/product_detail.css', array(), false, 'all');
-  wp_enqueue_style('detail');
+//   wp_register_style('detail', get_template_directory_uri() . '/css/product_detail.css', array(), false, 'all');
+//   wp_enqueue_style('detail');
 
 //   wp_register_style('owl-carousel', get_template_directory_uri() . '/css/owl.carousel.min.css', array(), false, 'all');
 //   wp_enqueue_style('owl-carousel');
   
-  wp_register_style('owl-theme', get_template_directory_uri() . '/css/owl.theme.default.min.css', array(), false, 'all');
-  wp_enqueue_style('owl-theme');
+//   wp_register_style('owl-theme', get_template_directory_uri() . '/css/owl.theme.default.min.css', array(), false, 'all');
+//   wp_enqueue_style('owl-theme');
 
 }
 add_action('wp_enqueue_scripts', 'load_css');
@@ -202,8 +204,8 @@ add_action('wp_enqueue_scripts', 'load_css');
 //Load JavaScript
 function load_js()
 {
-  wp_register_script('detail_project', get_template_directory_uri() . '/js/detail.js', 'jquery', false, true);
-  wp_enqueue_script('detail_project');
+//   wp_register_script('detail_project', get_template_directory_uri() . '/js/detail.js', 'jquery', false, true);
+//   wp_enqueue_script('detail_project');
 
 //   wp_register_script('owl-carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', 'jquery', false, true);
 //   wp_enqueue_script('owl-carousel');
@@ -215,4 +217,18 @@ function load_js()
 
 add_action('wp_enqueue_scripts', 'load_js');
 
+
+// Send email via SMTP
+add_action( 'phpmailer_init', 'my_phpmailer' );
+function my_phpmailer(PHPMailer $phpmailer ) {
+    $phpmailer->isSMTP();     
+    $phpmailer->Host = SMTP_HOST;
+    $phpmailer->SMTPAuth = SMTP_AUTH;
+    $phpmailer->Port = SMTP_PORT;
+    $phpmailer->Username = SMTP_USER;
+    $phpmailer->Password = SMTP_PASS;
+    $phpmailer->SMTPSecure = SMTP_SECURE;
+    $phpmailer->From = SMTP_FROM;
+    $phpmailer->FromName = SMTP_NAME;
+}
 

@@ -39,8 +39,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css">
     
   <!-- Carousel -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script> -->
   <?php wp_head(); ?>
 </head>
 
@@ -78,7 +78,7 @@
           </label>
           <div class="menu__main__list text-center">
             <div class="p-2 p-lg-4">
-              <a href="http://localhost:8080/foxteam/" class="position-relative text-decoration-none">
+              <a href="<?php echo site_url('/'); ?>" class="position-relative text-decoration-none">
                 <span class="position-relative">Trang chủ</span>
                 <hr class="
                     m-0
@@ -90,7 +90,7 @@
               </a>
             </div>
             <div class="p-2 p-lg-4">
-              <a href="http://localhost:8080/foxteam/about/" class="position-relative text-decoration-none">
+              <a href="<?php echo site_url('/about'); ?>" class="position-relative text-decoration-none">
                 <span class="position-relative">Về chúng tôi</span>
                 <hr class="
                     m-0
@@ -102,7 +102,7 @@
               </a>
             </div>
             <div class="p-2 p-lg-4">
-              <a href="http://localhost:8080/foxteam/project/" class="position-relative text-decoration-none">
+              <a href="<?php echo site_url('/project'); ?>" class="position-relative text-decoration-none">
                 <span class="position-relative">Dự án</span>
                 <hr class="
                     m-0
@@ -114,7 +114,7 @@
               </a>
             </div>
             <div class="p-2 p-lg-4">
-              <a href="http://localhost:8080/foxteam/services/" class="position-relative text-decoration-none">
+              <a href="<?php echo site_url('/services'); ?>" class="position-relative text-decoration-none">
                 <span class="position-relative">Dịch vụ</span>
                 <hr class="
                     m-0
@@ -126,7 +126,7 @@
               </a>
             </div>
             <div class="p-2 p-lg-4">
-              <a href="http://localhost:8080/foxteam/contact/" class="position-relative text-decoration-none">
+              <a href="<?php echo site_url('/contact'); ?>" class="position-relative text-decoration-none">
                 <span class="position-relative">Liên hệ</span>
                 <hr class="
                     m-0
