@@ -1,3 +1,4 @@
+"use strict";
 // $(function() {
 
 // 	if ( $('.other_project_carousel').length > 0 ) {

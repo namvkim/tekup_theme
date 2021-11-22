@@ -137,7 +137,7 @@
                 align-items-center
               "
             >
-              <a class="homepage__services__textBtn-1" href="service.html"
+              <a class="homepage__services__textBtn-1" href="<?php echo site_url('/services'); ?>"
                 >TÌM HIỂU THÊM</a
               >
               <img src="<?php echo get_template_directory_uri() ?>/images/Vector.svg" alt="" />
@@ -585,7 +585,7 @@
           Bạn muốn phát triển doanh nghiệp của mình ?
         </div>
         <div class="home__contact__button">
-          <a href="contact.html" class="d-flex align-items-center">
+          <a href="<?php echo site_url('/contact'); ?>" class="d-flex align-items-center">
             LIÊN HỆ VỚI CHÚNG TÔI NGAY
             <img class="" src="<?php echo get_template_directory_uri() ?>/images/poiter.svg" />
           </a>

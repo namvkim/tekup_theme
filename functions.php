@@ -188,27 +188,12 @@ function load_css()
 {
   wp_register_style('style', get_template_directory_uri() . '/css/style.css', array(), false, 'all');
   wp_enqueue_style('style');
-
-//   wp_register_style('detail', get_template_directory_uri() . '/css/product_detail.css', array(), false, 'all');
-//   wp_enqueue_style('detail');
-
-//   wp_register_style('owl-carousel', get_template_directory_uri() . '/css/owl.carousel.min.css', array(), false, 'all');
-//   wp_enqueue_style('owl-carousel');
-  
-//   wp_register_style('owl-theme', get_template_directory_uri() . '/css/owl.theme.default.min.css', array(), false, 'all');
-//   wp_enqueue_style('owl-theme');
-
 }
 add_action('wp_enqueue_scripts', 'load_css');
 
 //Load JavaScript
 function load_js()
 {
-//   wp_register_script('detail_project', get_template_directory_uri() . '/js/detail.js', 'jquery', false, true);
-//   wp_enqueue_script('detail_project');
-
-//   wp_register_script('owl-carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', 'jquery', false, true);
-//   wp_enqueue_script('owl-carousel');
 
   wp_register_script('script', get_template_directory_uri() . '/js/script.js', 'jquery', false, true);
   wp_enqueue_script('script');
@@ -221,12 +206,81 @@ add_action('wp_enqueue_scripts', 'load_js');
 add_action( 'phpmailer_init', 'send_smtp_email' );
 function send_smtp_email( $phpmailer ) {
     $phpmailer->isSMTP();
-    $phpmailer->Host       = SMTP_HOST;
-    $phpmailer->SMTPAuth   = SMTP_AUTH;
-    $phpmailer->Port       = SMTP_PORT;
-    $phpmailer->SMTPSecure = SMTP_SECURE;
-    $phpmailer->Username   = SMTP_USERNAME;
-    $phpmailer->Password   = SMTP_PASSWORD;
-    $phpmailer->From       = SMTP_FROM;
-    $phpmailer->FromName   = SMTP_FROMNAME;
+    $phpmailer->Host       = 'smtp.gmail.com';
+    $phpmailer->SMTPAuth   = true;
+    $phpmailer->Port       = 465;
+    $phpmailer->SMTPSecure = 'ssl';
+    $phpmailer->Username   = get_option('admin_email');
+    $phpmailer->Password   = 'lftilyxilhaeynke';
+    $phpmailer->From       = 'tekup@gmail.com';
+    $phpmailer->FromName   = 'Tekup Solutions';
+}
+// function send_smtp_email( $phpmailer ) {
+//     $phpmailer->isSMTP();
+//     $phpmailer->Host       = SMTP_HOST;
+//     $phpmailer->SMTPAuth   = SMTP_AUTH;
+//     $phpmailer->Port       = SMTP_PORT;
+//     $phpmailer->SMTPSecure = SMTP_SECURE;
+//     $phpmailer->Username   = SMTP_USERNAME;
+//     $phpmailer->Password   = SMTP_PASSWORD;
+//     $phpmailer->From       = SMTP_FROM;
+//     $phpmailer->FromName   = SMTP_FROMNAME;
+// }
+
+$errors = [];
+$message = '';
+$errorMessage = '';
+
+if (!empty($_POST)) {
+    $name = sanitize_text_field($_POST['user']);
+    $email = sanitize_text_field($_POST['email']);
+    $message = sanitize_text_field($_POST['note']);
+
+    $selected_area = (filter_input(
+        INPUT_POST,
+        'areas_of_concern',
+        FILTER_SANITIZE_STRING,
+        FILTER_REQUIRE_ARRAY
+    ));
+
+
+
+    $concerned_area = '';
+    if (is_array($selected_area) || is_object($selected_area)) {
+        foreach ($selected_area as $concern_area) {
+            $concerned_area = $concern_area;
+        }
+    }
+
+    if (empty($name)) {
+        $errors[] = 'Name is empty';
+    }
+
+    if (empty($email)) {
+        $errors[] = 'Email is empty';
+    } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $errors[] = 'Email is invalid';
+    }
+    if (empty($message)) {
+        $errors[] = 'Message is empty';
+    }
+
+
+    if (empty($errors)) {
+        $toEmail = 'hoa.le22@student.passerellesnumeriques.org';
+        $emailSubject = 'Tekup Solution';
+        $headers = ['From' => $email, 'Reply-To' => $email, 'Content-type' => 'text/html; charset=iso-8859-1'];
+
+        $bodyParagraphs = ["Name: {$name}", "Email: {$email}", "Area of concerned: {$concerned_area}", "Message: $message"];
+        $body = join(PHP_EOL, $bodyParagraphs);
+        if (wp_mail($toEmail, $emailSubject, $body, $headers)) {
+            $message = "<p style='color: green;'>Thank you " . $name . " send email successful</p>";
+            echo "<script>alert('$message');</script>";
+        } else {
+            $errorMessage = 'Oops, something went wrong. Please try again later';
+        }
+    } else {
+        $allErrors = join('<br/>', $errors);
+        $errorMessage = "<p style='color: red;'>{$allErrors}</p>";
+    }
 }
