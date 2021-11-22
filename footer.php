@@ -67,19 +67,14 @@
 <?php wp_footer(); ?>
 
 </body>
-<!-- <script src="./js/script.js"></script> -->
-  <!--Carousel-->
-  <!-- <script src="js/jquery.min.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/main.js"></script> -->
+  <!-- gallery modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
   
-  <!-- PhotoSwipe JS -->
+  <!-- ajax -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/js/swiper.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js"></script>
-   -->
+
   <!-- bootstrap 5 -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

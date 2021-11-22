@@ -29,7 +29,7 @@
               echo '</a>';
             echo '</div>';
               the_title( '<div class="project__body__item__title">', '</div>' );
-              echo '<div class="project__body__item__subtitle">'.the_content().'</div>'; 
+              echo '<div class="project__body__item__subtitle">'.the_excerpt().'</div>'; 
               echo '</div>';
           endwhile;
           wp_reset_query(); ?>

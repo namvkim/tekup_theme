@@ -188,6 +188,12 @@ function load_css()
 {
   wp_register_style('style', get_template_directory_uri() . '/css/style.css', array(), false, 'all');
   wp_enqueue_style('style');
+
+  wp_register_style('owl-carousel', get_template_directory_uri() . '/css/owl.carousel.min.css', array(), false, 'all');
+  wp_enqueue_style('owl-carousel');
+
+//   wp_register_style('owl-theme', get_template_directory_uri() . '/css/owl.theme.default.min.css', array(), false, 'all');
+//   wp_enqueue_style('owl-theme');
 }
 add_action('wp_enqueue_scripts', 'load_css');
 
@@ -197,6 +203,9 @@ function load_js()
 
   wp_register_script('script', get_template_directory_uri() . '/js/script.js', 'jquery', false, true);
   wp_enqueue_script('script');
+
+  wp_register_script('owl-carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', 'jquery', false, true);
+  wp_enqueue_script('owl-carousel');
   
 }
 
@@ -215,17 +224,6 @@ function send_smtp_email( $phpmailer ) {
     $phpmailer->From       = 'tekup@gmail.com';
     $phpmailer->FromName   = 'Tekup Solutions';
 }
-// function send_smtp_email( $phpmailer ) {
-//     $phpmailer->isSMTP();
-//     $phpmailer->Host       = SMTP_HOST;
-//     $phpmailer->SMTPAuth   = SMTP_AUTH;
-//     $phpmailer->Port       = SMTP_PORT;
-//     $phpmailer->SMTPSecure = SMTP_SECURE;
-//     $phpmailer->Username   = SMTP_USERNAME;
-//     $phpmailer->Password   = SMTP_PASSWORD;
-//     $phpmailer->From       = SMTP_FROM;
-//     $phpmailer->FromName   = SMTP_FROMNAME;
-// }
 
 $errors = [];
 $message = '';

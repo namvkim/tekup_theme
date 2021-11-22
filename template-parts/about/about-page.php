@@ -105,7 +105,7 @@
         echo '  <div class="about__gallery__staff__item">';
         echo get_the_post_thumbnail($post->ID, 'category-thumb');
         the_title('<div class="about__gallery__staff__position">', '</div>');
-        echo '<div class="about__gallery__staff__name">' . the_content() . '</div>';
+        echo '<div class="about__gallery__staff__name">' . the_content(). '</div>';
         echo '</div>';
       endwhile;
       wp_reset_query();

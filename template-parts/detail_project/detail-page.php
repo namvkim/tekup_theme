@@ -1,180 +1,150 @@
-  
-  <section class="detailpage__section">
-    <div class="container-fluid detailpage_container">
-      <div class="row project__image">
-        <div class="col-sm-6">
-          <div class="row my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-            <div class="col-lg-7 project__image__1">
-              <figure class="figure" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="<?php echo get_template_directory_uri() ?>/images/project_1.png" itemprop="contentUrl" data-size="1024x1024">
-                  <img src="<?php echo get_template_directory_uri() ?>/images/project_1.png" itemprop="thumbnail" alt="Image project 1" class="figure-img img-fluid rounded" />
-                </a>
-                <figcaption itemprop="caption description">Project Image 1</figcaption>
-              </figure>
+<section class="d-flex justify-content-center px-3">
+      <div class="pro__details__main__content justify-content-between">
+        <div class="pro__details__main__left">
+          <div class="photos">
+            <div class="item pro__details__img__1">
+              <a
+                href=""
+                data-lightbox="photos"
+                ><img
+                  class="img-fluid"
+                  src="<?php echo $picture1 ?>"
+                />
+              </a>
             </div>
-            <div class="col-lg-5 project__image__2">
-              <figure class="w-100 shadow-1-strong rounded" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="<?php echo get_template_directory_uri() ?>/images/project_2.png" itemprop="contentUrl" data-size="1024x1024">
-                  <img src="<?php echo get_template_directory_uri() ?>/images/project_2.png" alt="Lightbox image 1" class="w-100 mb-2 mb-md-3 shadow-1-strong rounded" />
-                </a>
-                <figcaption itemprop="caption description">Project Image 2</figcaption>
-              </figure>
-              <figure class="figure" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <a href="<?php echo get_template_directory_uri() ?>/images/project_3.png" itemprop="contentUrl" data-size="1024x1024">
-                  <img src="<?php echo get_template_directory_uri() ?>/images/project_3.png" alt="Lightbox image 2" class="figure-img img-fluid rounded" />
-                </a>
-                <figcaption itemprop="caption description">Project Image 3</figcaption>
-              </figure>
+            <div class="item pro__details__img__2">
+              <a
+                href=""
+                data-lightbox="photos"
+                ><img
+                  class="img-fluid"
+                  src="<?php echo $picture2 ?>"
+              /></a>
             </div>
-          </div>
-        </div>
-        <div class="col-sm-6 project__content">
-          <div class="text__title">
-            <h2>Boxgo Fulfilment</h2>
-            <h5>UI/UX Design</h5>
-            <div class="text__inform">
-              <ul class="text">
-                <h6>Thông tin dự án</h6>
-                <li>
-                  Created by TekUp, Boxgo is a specialized system for project
-                  management and operations management for construction
-                  companies.
-                </li>
-              </ul>
-              <ul class="text">
-                <h6>Thời gian thực hiện</h6>
-                <li>06 tháng</li>
-              </ul>
-              <ul class="text">
-                <h6>Công nghệ</h6>
-                <li>.Node js .React .Flutter .Laverel</li>
-              </ul>
-            </div>
-
-            <div class="project_detail_link">
-              <button class="button"><a href="#">Truy cập trang web</a></button>
+            <div class="item pro__details__img__3">
+              <a
+                href=""
+                data-lightbox="photos"
+                ><img
+                  class="img-fluid"
+                  src="<?php echo $picture3 ?>"
+              /></a>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  
-  <section class="other__project_section">
-    <div class="container mt-5 other__project_content">
-      <h2>Dự án khác</h2>
-      <div class="owl-carousel my-gallery other_project_carousel">
-        <div class="ms-2 me-2">
-          <div class="item">
-            <img data-src="<?php echo get_template_directory_uri()?>/images/project_item1.png" class="owl-lazy">
-            <h5 class="card-title">Boxgo Fulfilment</h5>
-            UI/UX Design
-          </div>
-        </div>
-        <div class="ms-2 me-2">
-          <div class="item">
-            <img data-src="<?php echo get_template_directory_uri() ?>/images/project_item2.png" class="owl-lazy">
-            <h5 class="card-title">AI Plan Chedule</h5>
-            UI/UX Design
-          </div>
-        </div>
-        <div class="ms-2 me-2">
-          <div class="item">
-            <img data-src="<?php echo get_template_directory_uri() ?>/images/project_item3.png" class="owl-lazy">
-            <h5 class="card-title">AI Plan Chedule</h5>
-            UI/UX Design
-          </div>
-        </div>
-        <div class="ms-2 me-2">
-          <div class="item">
-            <img data-src="<?php echo get_template_directory_uri() ?>/images/project_item4.png" class="owl-lazy">
-            <h5 class="card-title">AI Plan Chedule</h5>
-            UI/UX Design
-          </div>
-        </div>
-        <div class="ms-2 me-2">
-          <div class="item">
-            <img data-src="<?php echo get_template_directory_uri() ?>/images/project_item5.png" class="owl-lazy">
-            <h5 class="card-title">AI Plan Chedule</h5>
-            UI/UX Design
-          </div>
-        </div>
-        <div class="ms-2 me-2">
-          <div class="item">
-            <img data-src="<?php echo get_template_directory_uri() ?>/images/project_item6.png" class="owl-lazy">
-            <h5 class="card-title">AI Plan Chedule</h5>
-            UI/UX Design
-          </div>
-        </div>
-        <div class="ms-2 me-2">
-          <div class="item">
-            <img data-src="<?php echo get_template_directory_uri() ?>/images/project_item7.png" class="owl-lazy">
-            <h5 class="card-title">AI Plan Chedule</h5>
-            UI/UX Design
-          </div>
-        </div>
-        <div class="ms-2 me-2">
-          <div class="item">
-            <img data-src="<?php echo get_template_directory_uri() ?>/images/project_item8.png" class="owl-lazy">
-            <h5 class="card-title">AI Plan Chedule</h5>
-            UI/UX Design
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="other__project_space">
+        <div class="pro__details__main__right">
+          <?php
+              the_title( '<div class="pro__details__main__title mb-3">', '</div>' )
+          ?>
+          <div class="pro__details__main__sub"><?php echo $subtitle ?></div>
+          <div class="pro__details__main__title2 mb-2"><?php echo $projectinform?></div>
+          <div class="pro__details__main__sub2">
+          <?php echo $sub_inform ?></div>
+          <div class="pro__details__main__title2 mb-2"><?php echo $time ?></div>
+          <div class="pro__details__main__sub2"><?php echo $sub_time ?></div>
+          <div class="pro__details__main__title2 mb-2"><?php echo $technical ?></div>
+          <div class="pro__details__main__sub2"><?php echo $sub_technical ?></div>
 
-  </div>
-  <section>
-
-    <!--***** PHOTOSWIPE *****-->
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="pswp__bg"></div>
-      <div class="pswp__scroll-wrap">
-        <div class="pswp__container">
-          <div class="pswp__item"></div>
-          <div class="pswp__item"></div>
-          <div class="pswp__item"></div>
-        </div>
-
-        <div class="pswp__ui pswp__ui--hidden">
-          <div class="pswp__top-bar">
-            <div class="pswp__counter"></div>
-
-            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-            <button class="pswp__button pswp__button--share" title="Share"></button>
-            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-            <div class="pswp__preloader">
-              <div class="pswp__preloader__icn">
-                <div class="pswp__preloader__cut">
-                  <div class="pswp__preloader__donut">
-                  </div>
-                </div>
+          <a href="<?php echo site_url('/'); ?>">
+            <div
+              class="
+                pro__details__main__btn
+                d-flex
+                justify-content-center
+                align-items-center
+              "
+            >
+              <div class="pro__details__main__btn__title">
+                TRUY CẬP TRANG WEB
               </div>
             </div>
-
-          </div>
-
-          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-            <div class="pswp__share-tooltip">
-            </div>
-          </div>
-
-          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-          <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-
-          <div class="pswp__caption">
-            <div class="pswp__caption__center"></div>
-          </div>
-
+          </a>
         </div>
       </div>
-    </div>
-
-  </section>
-
-  
- 
+    </section>
+    <section
+      class="
+        pro__details__carousel__container
+        d-flex
+        justify-content-center
+        px-3
+      "
+    >
+      <div class="pro__details__carousel__content">
+        <div class="pro__details__carousel__title">Dự án khác</div>
+        <div class="owl-carousel pro__details__carousel__main">
+          <div class="pro__details__carousel__item">
+            <img data-src="images/project_item1.png" class="owl-lazy" />
+            <div class="pro__details__carousel__item__title mt-3">
+              Boxgo Fulfilment
+            </div>
+            <div class="pro__details__carousel__item__sub mt-2">
+              UI/UX Design
+            </div>
+          </div>
+          <div class="pro__details__carousel__item">
+            <img data-src="images/project_item2.png" class="owl-lazy" />
+            <div class="pro__details__carousel__item__title mt-3">
+              AI Plan Chedule
+            </div>
+            <div class="pro__details__carousel__item__sub mt-2">
+              UI/UX Design
+            </div>
+          </div>
+          <div class="pro__details__carousel__item">
+            <img data-src="images/project_item3.png" class="owl-lazy" />
+            <div class="pro__details__carousel__item__title mt-3">
+              AI Plan Chedule
+            </div>
+            <div class="pro__details__carousel__item__sub mt-2">
+              UI/UX Design
+            </div>
+          </div>
+          <div class="pro__details__carousel__item">
+            <img data-src="images/project_item4.png" class="owl-lazy" />
+            <div class="pro__details__carousel__item__title mt-3">
+              AI Plan Chedule
+            </div>
+            <div class="pro__details__carousel__item__sub mt-2">
+              UI/UX Design
+            </div>
+          </div>
+          <div class="pro__details__carousel__item">
+            <img data-src="images/project_item5.png" class="owl-lazy" />
+            <div class="pro__details__carousel__item__title mt-3">
+              AI Plan Chedule
+            </div>
+            <div class="pro__details__carousel__item__sub mt-2">
+              UI/UX Design
+            </div>
+          </div>
+          <div class="pro__details__carousel__item">
+            <img data-src="images/project_item6.png" class="owl-lazy" />
+            <div class="pro__details__carousel__item__title mt-3">
+              AI Plan Chedule
+            </div>
+            <div class="pro__details__carousel__item__sub mt-2">
+              UI/UX Design
+            </div>
+          </div>
+          <div class="pro__details__carousel__item">
+            <img data-src="images/project_item7.png" class="owl-lazy" />
+            <div class="pro__details__carousel__item__title mt-3">
+              AI Plan Chedule
+            </div>
+            <div class="pro__details__carousel__item__sub mt-2">
+              UI/UX Design
+            </div>
+          </div>
+          <div class="pro__details__carousel__item">
+            <img data-src="images/project_item8.png" class="owl-lazy" />
+            <div class="pro__details__carousel__item__title mt-3">
+              AI Plan Chedule
+            </div>
+            <div class="pro__details__carousel__item__sub mt-2">
+              UI/UX Design
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
