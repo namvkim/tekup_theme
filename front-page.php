@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The main template file
  *
@@ -14,9 +15,9 @@
 
 get_header();
 ?>
-	<main>
-	<?php get_template_part( 'template-parts/home/home', 'page' ); ?>
-	</main><!-- #main -->
+<main>
+  <?php get_template_part('template-parts/home/home', 'page'); ?>
+</main><!-- #main -->
 <?php
 // get_sidebar();
 get_footer();

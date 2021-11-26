@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying all pages
  *
@@ -15,23 +16,23 @@
 get_header('secondary');
 ?>
 
-	<main>
+<main>
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+  <?php
+  while (have_posts()) :
+    the_post();
 
-			get_template_part( 'template-parts/content', 'page' );
+    get_template_part('template-parts/content', 'page');
 
-			
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
 
-		endwhile; 
-		?>
+    if (comments_open() || get_comments_number()) :
+      comments_template();
+    endif;
 
-	</main><!-- #main -->
+  endwhile;
+  ?>
+
+</main><!-- #main -->
 
 <?php
 get_sidebar();

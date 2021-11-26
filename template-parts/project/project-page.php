@@ -10,29 +10,29 @@
       Dự án nổi bật
     </div>
     <div class="d-flex justify-content-between flex-wrap">
-     
-        <?php $args = array(
+
+      <?php $args = array(
         'post_type' => 'post',
         'posts_per_page' => 15,
-        'category_name'=>'project',
+        'category_name' => 'project',
         'orderby' => 'date',
-        'order'=>'desc',
-          );
+        'order' => 'desc',
+      );
 
-          $loop = new wp_Query($args);
+      $loop = new wp_Query($args);
 
-          while($loop->have_posts()) : $loop->the_post();
-          echo ' <div class="project__body__item">';
-            echo '<div class="project__body__item__img">';
-              echo '<a href="'.get_permalink().'">';
-              echo get_the_post_thumbnail($post->ID, 'category-thumb');
-              echo '</a>';
-            echo '</div>';
-              the_title( '<div class="project__body__item__title">', '</div>' );
-              echo '<div class="project__body__item__subtitle">'.the_excerpt().'</div>'; 
-              echo '</div>';
-          endwhile;
-          wp_reset_query(); ?>
+      while ($loop->have_posts()) : $loop->the_post();
+        echo ' <div class="project__body__item">';
+        echo '<div class="project__body__item__img">';
+        echo '<a href="' . get_permalink() . '">';
+        echo get_the_post_thumbnail($post->ID, 'category-thumb');
+        echo '</a>';
+        echo '</div>';
+        the_title('<div class="project__body__item__title">', '</div>');
+        echo '<div class="project__body__item__subtitle">' . the_excerpt() . '</div>';
+        echo '</div>';
+      endwhile;
+      wp_reset_query(); ?>
     </div>
     <div class="d-flex justify-content-center">
       <div class="project__footer__button">TẢI THÊM</div>

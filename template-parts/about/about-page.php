@@ -35,7 +35,7 @@
           Chúng tôi khuyến khích nhân viên của mình phạm sai lầm thay vì giả
           mạo sự hoàn hảo bởi vì họ là bằng chứng sống cho sự cố gắng của
           công ty.
-        </div>
+        </div>     
       </div>
     </div>
   </div>
@@ -105,7 +105,7 @@
         echo '  <div class="about__gallery__staff__item">';
         echo get_the_post_thumbnail($post->ID, 'category-thumb');
         the_title('<div class="about__gallery__staff__position">', '</div>');
-        echo '<div class="about__gallery__staff__name">' . the_content(). '</div>';
+        echo '<div class="about__gallery__staff__name">' . the_content() . '</div>';
         echo '</div>';
       endwhile;
       wp_reset_query();

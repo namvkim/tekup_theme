@@ -68,7 +68,7 @@ get_header('secondary');
       </div>
     </div>
   </section>
-  <section class="
+  <!-- <section class="
         pro__details__carousel__container
         d-flex
         justify-content-center
@@ -76,27 +76,28 @@ get_header('secondary');
       ">
     <div class="pro__details__carousel__content">
       <div class="pro__details__carousel__title">Dự án khác</div>
-      <div class="owl-carousel pro__details__carousel__main">
-      <?php $args = array(
-        'post_type' => 'post',
-        'posts_per_page' => 15,
-        'category_name'=>'project',
-        'orderby' => 'date',
-        'order'=>'desc',
-          );
+      <div class="owl-carousel pro__details__carousel__main"> -->
+  <?php
+  // $args = array(
+  //   'post_type' => 'post',
+  //   'posts_per_page' => 15,
+  //   'category_name'=>'project',
+  //   'orderby' => 'date',
+  //   'order'=>'desc',
+  //     );
 
-          $loop = new wp_Query($args);
+  //     $loop = new wp_Query($args);
 
-          while($loop->have_posts()) : $loop->the_post();
-          echo ' <div class="pro__details__carousel__item">';
-            echo get_the_post_thumbnail($post->ID, 'category-thumb');
-            the_title( '<div class="pro__details__carousel__item__title mt-3">', '</div>' );
-            echo '<div class="pro__details__carousel__item__sub mt-2">'.the_excerpt().'</div>';
-          echo '</div>';
-          endwhile;
-          wp_reset_query(); 
-          ?>
-        <!-- <div class="pro__details__carousel__item">
+  //     while($loop->have_posts()) : $loop->the_post();
+  //     echo ' <div class="pro__details__carousel__item">';
+  //       echo get_the_post_thumbnail($post->ID, 'category-thumb');
+  //       the_title( '<div class="pro__details__carousel__item__title mt-3">', '</div>' );
+  //       echo '<div class="pro__details__carousel__item__sub mt-2">'.the_excerpt().'</div>';
+  //     echo '</div>';
+  //     endwhile;
+  //     wp_reset_query(); 
+  ?>
+  <!-- <div class="pro__details__carousel__item">
           <img data-src="<?php echo get_template_directory_uri() ?>images/project_item1.png" class="owl-lazy" />
           <div class="pro__details__carousel__item__title mt-3">
             Boxgo Fulfilment
@@ -168,8 +169,139 @@ get_header('secondary');
             UI/UX Design
           </div>
         </div> -->
+  <!-- </div>
+    </div>
+  </section> -->
+  <div class="container-xl">
+    <div class="row">
+      <div class="col-md-12 other_project_content">
+        <h2 class="other__project__title">Dự án khác</h2>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+          <!-- Wrapper for carousel items -->
+          <div class="carousel-inner">
+            <div class="item carousel-item active">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="<?php echo get_template_directory_uri() ?>/images/project_item1.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Boxgo Fulfilment</h4>
+                      <p class="sub-title">UI/UX Design</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="<?php echo get_template_directory_uri() ?>/images/project_item2.png" class="img-fluid" alt="Headphone">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>AI Plan Chedule</h4>
+                      <p class="sub-title">UI/UX Design</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="<?php echo get_template_directory_uri() ?>/images/project_item3.png" class="img-fluid" alt="Macbook">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>AI Plan Chedule</h4>
+                      <p class="sub-title">UI/UX Design</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item carousel-item">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="<?php echo get_template_directory_uri() ?>/images/project_item4.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>AI Plan Chedule</h4>
+                      <p class="sub-title">UI/UX Design</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="<?php echo get_template_directory_uri() ?>/images/project_item5.png" class="img-fluid" alt="Headphone">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>AI Plan Chedule</h4>
+                      <p class="sub-title">UI/UX Design</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="<?php echo get_template_directory_uri() ?>/images/project_item6.png" class="img-fluid" alt="Macbook">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>AI Plan Chedule</h4>
+                      <p class="sub-title">UI/UX Design</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item carousel-item">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="<?php echo get_template_directory_uri() ?>/images/project_item7.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>AI Plan Chedule</h4>
+                      <p class="sub-title">UI/UX Design</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="<?php echo get_template_directory_uri() ?>/images/project_item8.png" class="img-fluid" alt="Headphone">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>AI Plan Chedule</h4>
+                      <p class="sub-title">UI/UX Design</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="<?php echo get_template_directory_uri() ?>/images/project_item2.png" class="img-fluid" alt="Macbook">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>AI Plan Chedule</h4>
+                      <p class="sub-title">UI/UX Design</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel controls -->
+          <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </div>
       </div>
     </div>
+  </div>
   </section>
 </main>
 

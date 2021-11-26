@@ -17,7 +17,7 @@
       <div class="footer__main row m-0">
         <div class="footer__main__contact col-lg-5 p-0">
           <div class="pb-3 d-flex align-items-center">
-            <img src="<?php echo get_template_directory_uri() ?>/images/mini-logo.svg" alt="" />     
+            <img src="<?php echo get_template_directory_uri() ?>/images/mini-logo.svg" alt="" />
           </div>
           <div class="py-3">
             <img src="<?php echo get_template_directory_uri() ?>/images/icon_email.svg" alt="" />
@@ -67,14 +67,15 @@
 <?php wp_footer(); ?>
 
 </body>
-  <!-- gallery modal -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- gallery modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
-  
-  <!-- ajax -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/js/swiper.min.js"></script>
 
+<!-- ajax -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/js/swiper.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/script.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/owl.carousel.min.js"></script>
   <!-- bootstrap 5 -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -91,5 +92,4 @@
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"
   ></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
 </html>

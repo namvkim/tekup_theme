@@ -1,8 +1,7 @@
-
 <section class="contact__container px-3">
   <div class="contact__content" method="post" id="contact-form-content">
     <img src="<?php echo get_template_directory_uri() ?>/images/contact.png" alt="contact" class="contact__image" />
-    <form  method="post" id="contact-form" class="contact__form">
+    <form method="post" id="contact-form" class="contact__form">
       <div class="contact__top">Chúng tôi luôn ở đây để giúp bạn</div>
       <div class="contact__mid">Liên hệ với chúng tôi</div>
       <div class="contact__title">
@@ -12,8 +11,8 @@
       <div class="d-flex justify-content-between">
         <div class="contact__input__group me-3 w-50">
           <img src="<?php echo get_template_directory_uri() ?>/images/contact_icon_user.svg" />
-          <input class="contact__input__style" type="text" placeholder="Tên cá nhân" name="user" id="user"/>
-        </div> 
+          <input class="contact__input__style" type="text" placeholder="Tên cá nhân" name="user" id="user" />
+        </div>
         <div class="contact__input__group ms-3 w-50">
           <img src="<?php echo get_template_directory_uri() ?>/images/email 2.svg" />
           <input class="contact__input__style" type="email" placeholder="Email" name="email" id="email" />
@@ -38,4 +37,3 @@
     </form>
   </div>
 </section>
-

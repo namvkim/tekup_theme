@@ -2020,6 +2020,130 @@ body {
   }
 }
 
+.other_project_content .other__project__title{
+  padding-top: 6%;
+  padding-left: 6%;
+  margin-bottom: -4%;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+
+  letter-spacing: -0.01em;
+
+  color: #0B0D27;
+}
+.other_project_content .carousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+.other_project_content .carousel .item {
+	color: #747d89;
+	min-height: 325px;
+	text-align: center;
+	overflow: hidden;
+}
+.other_project_content .carousel .thumb-wrapper {
+	padding: 20px 5px;
+	background: #fff;
+	border-radius: 6px;
+	text-align: left;
+	position: relative;
+}
+.other_project_content .carousel .item .img-box {
+	height: 320px;
+	margin-bottom: 20px;
+	width: 100%;
+	position: relative;
+}
+.other_project_content .carousel .item img {	
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+.other_project_content .carousel .item h4 {
+  color: #0B0D27;
+	font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+.other_project_content .carousel .item h4, .carousel .item p, .carousel .item ul {
+	margin-bottom: 5px;
+}
+.other_project_content .carousel .thumb-content .btn {
+	color: #7ac400;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: none;
+	border: 1px solid #7ac400;
+	padding: 6px 14px;
+	margin-top: 5px;
+	line-height: 16px;
+	border-radius: 20px;
+}
+.other_project_content .carousel .thumb-content .btn:hover, .carousel .thumb-content .btn:focus {
+	color: #fff;
+	background: #7ac400;
+	box-shadow: none;
+}
+.other_project_content .carousel .thumb-content .btn i {
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 5px;
+}
+.other_project_content .carousel .sub-title {
+	font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #0B0D27;
+	padding: 2px 0;
+}
+.other_project_content .carousel .item-price strike {
+	opacity: 0.7;
+	margin-right: 5px;
+}
+.other_project_content .carousel-control-prev, .carousel-control-next {
+	height: 44px;
+	width: 40px;
+	margin: auto 0;
+	border-radius: 4px;
+	opacity: 0.8;
+}
+.other_project_content .carousel-control-prev:hover, .carousel-control-next:hover {
+  background: #0B0D27;
+	opacity: 1;
+}
+.other_project_content .carousel-control-prev i:hover, .carousel-control-next i:hover {
+  color: #fff;
+}
+.other_project_content .carousel-control-prev i, .carousel-control-next i {
+	font-size: 36px;
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	margin: -19px 0 0 0;
+	z-index: 5;
+	left: 0;
+	right: 0;
+	color: #000000;
+	text-shadow: none;
+}
+.other_project_content .carousel-control-prev i {
+	margin-left: -2px;
+}
+.other_project_content .carousel-control-next i {
+	margin-right: -4px;
+}		
+
 /*-------------------------------------- Service --------------------------------------*/
 
 .service__banner__container {

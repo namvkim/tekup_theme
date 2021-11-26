@@ -20,13 +20,22 @@
   <meta name="description" content="<?php bloginfo('description'); ?>">
   <title>Tekup Solution</title>
   <link href="<?php echo get_template_directory_uri() ?>/style.css" rel="stylesheet">
+  
+<!-- google font  -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- google font  -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-  <!-- bootstrap 5 -->
-  <link
+    <!-- bootstrap 5 -->
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
@@ -36,23 +45,23 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-   <!-- gallery modal -->
-   <link
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+    <!-- gallery modal -->
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css"
     />
+  
   <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
   <header>
-  <section class="menu__container w-100 position-fixed" id="menu__container">
+    <section class="menu__container w-100 position-fixed" id="menu__container">
       <div class="d-flex justify-content-between align-items-center">
         <div class="d-flex align-items-center">
           <div>
